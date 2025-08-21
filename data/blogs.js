@@ -1,6 +1,7 @@
 export const posts = [
   {
     id: 1,
+    slug: "ux-review-presentations",
     image: "/assets/images/blog/post-4.jpg",
     alt: "UX review presentations",
     title: "UX review presentations",
@@ -9,6 +10,7 @@ export const posts = [
   },
   {
     id: 2,
+    slug: "migrating-to-linear-101",
     image: "/assets/images/blog/post-5.jpg",
     alt: "Migrating to Linear 101",
     title: "Migrating to Linear 101",
@@ -17,6 +19,7 @@ export const posts = [
   },
   {
     id: 3,
+    slug: "building-your-api-stack",
     image: "/assets/images/blog/post-6.jpg",
     alt: "Building your API stack",
     title: "Building your API stack",
@@ -25,6 +28,7 @@ export const posts = [
   },
   {
     id: 4,
+    slug: "ux-review-presentations",
     image: "/assets/images/blog/img-01.jpg",
     alt: "UX review presentations",
     title: "UX review presentations",
@@ -33,6 +37,7 @@ export const posts = [
   },
   {
     id: 5,
+    slug: "migrating-to-linear-101",
     image: "/assets/images/blog/img-02.jpg",
     alt: "Migrating to Linear 101",
     title: "Migrating to Linear 101",
@@ -41,6 +46,7 @@ export const posts = [
   },
   {
     id: 6,
+    slug: "ux-review-presentations",
     image: "/assets/images/blog/post-4.jpg",
     alt: "UX review presentations",
     title: "UX review presentations",
@@ -49,6 +55,7 @@ export const posts = [
   },
   {
     id: 7,
+    slug: "migrating-to-linear-101",
     image: "/assets/images/blog/post-5.jpg",
     alt: "Migrating to Linear 101",
     title: "Migrating to Linear 101",
@@ -57,6 +64,7 @@ export const posts = [
   },
   {
     id: 8,
+    slug: "building-your-api-stack",
     image: "/assets/images/blog/post-6.jpg",
     alt: "Building your API stack",
     title: "Building your API stack",
@@ -65,6 +73,7 @@ export const posts = [
   },
   {
     id: 9,
+    slug: "ux-review-presentations",
     image: "/assets/images/blog/img-01.jpg",
     alt: "UX review presentations",
     title: "UX review presentations",
@@ -73,6 +82,7 @@ export const posts = [
   },
   {
     id: 10,
+    slug: "migrating-to-linear-101",
     image: "/assets/images/blog/img-02.jpg",
     alt: "Migrating to Linear 101",
     title: "Migrating to Linear 101",
@@ -193,7 +203,8 @@ export const blogPosts3 = [
     alt: "Migrating to Linear 101",
     caption: "Migrating to Linear 101",
     date: "Apr 24, 2024",
-    title: "Migrating to Linear 101",
+  title: "Migrating to Linear 101",
+  slug: "migrating-to-linear-101",
   },
   {
     id: 21,
@@ -201,7 +212,8 @@ export const blogPosts3 = [
     alt: "Building your API stack",
     caption: "Building your API stack",
     date: "Apr 22, 2024",
-    title: "Building your API stack",
+  title: "Building your API stack",
+  slug: "building-your-api-stack",
   },
   {
     id: 22,
@@ -209,7 +221,8 @@ export const blogPosts3 = [
     alt: "UX review presentations",
     caption: "UX review presentations",
     date: "Apr 26, 2024",
-    title: "UX review presentations",
+  title: "UX review presentations",
+  slug: "ux-review-presentations",
   },
   {
     id: 23,
@@ -217,7 +230,8 @@ export const blogPosts3 = [
     alt: "Migrating to Linear 101",
     caption: "Migrating to Linear 101",
     date: "Apr 24, 2024",
-    title: "Migrating to Linear 101",
+  title: "Migrating to Linear 101",
+  slug: "migrating-to-linear-101",
   },
   {
     id: 24,
@@ -225,7 +239,8 @@ export const blogPosts3 = [
     alt: "Building your API stack",
     caption: "Building your API stack",
     date: "Apr 22, 2024",
-    title: "Building your API stack",
+  title: "Building your API stack",
+  slug: "building-your-api-stack",
   },
   {
     id: 25,
@@ -233,7 +248,8 @@ export const blogPosts3 = [
     alt: "UX review presentations",
     caption: "UX review presentations",
     date: "Apr 26, 2024",
-    title: "UX review presentations",
+  title: "UX review presentations",
+  slug: "ux-review-presentations",
   },
 ];
 
@@ -387,6 +403,7 @@ export const blogPosts5 = [
   {
     id: 1,
     title: "UX review presentations",
+  slug: "ux-review-presentations",
     imageUrl: "/assets/images/blog/img-01.jpg",
     imageAlt: "UX review presentations",
     excerpt:

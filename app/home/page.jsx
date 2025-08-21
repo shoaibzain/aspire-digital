@@ -5,6 +5,8 @@ import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import React from "react";
 import Portfolio from "@/components/home/Portfolio";
+import Testimonials from "@/components/home/Testimonials";
+import Elements from "@/components/home/Elements";
 export const metadata = {
   title: "Home.",
   description: "Home description.",
@@ -21,7 +23,9 @@ export default function HomePage6() {
           <Hero />
           <About />
           <Portfolio />
+          <Testimonials />
           <Blogs />
+          <Elements />
         </div>
         <Footer />
       </div>

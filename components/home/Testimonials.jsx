@@ -87,66 +87,6 @@ export default function Testimonials() {
                   </SwiperSlide>
                 ))}
               </Swiper>
-              <Swiper
-                className="swiper mt-2 lg:mt-3"
-                slidesPerView={1}
-                spaceBetween={16}
-                centeredSlides={true}
-                loop={true}
-                speed={10000}
-                modules={[Autoplay]}
-                autoplay={{
-                  delay: 0, // Negative delay is not valid, setting to 0 for continuous autoplay
-                  disableOnInteraction: true,
-                  pauseOnMouseEnter: true,
-                }}
-                allowTouchMove={false}
-                breakpoints={{
-                  1024: {
-                    // Adjust according to your responsive design
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                  },
-                }}
-                style={{
-                  transform: "rotate(180deg)",
-                }}
-              >
-                {reviews.map((review, index) => (
-                  <SwiperSlide
-                    style={{ transform: "rotate(180deg)" }}
-                    className="swiper-slide"
-                    key={index}
-                  >
-                    <div className="panel vstack justify-between gap-3 p-3 lg:p-4 xl:p-6 bg-white text-black rounded-1-5 h-100">
-                      <div className="panel vstack items-start gap-2 lg:gap-4">
-                        <div className="rating d-flex gap-0">
-                          {[...Array(5)].map((_, starIndex) => (
-                            <Image
-                              key={starIndex}
-                              className="icon icon-1"
-                              alt="star"
-                              data-uc-svg=""
-                              src="/assets/images/star.svg"
-                              width="24"
-                              height="25"
-                            />
-                          ))}
-                        </div>
-                        <p className="fs-5 lg:fs-4">{review.feedback}</p>
-                      </div>
-                      <div className="panel mt-2 lg:mt-4">
-                        <div className="panel vstack items-start gap-narrow">
-                          <h6 className="h5 m-0 text-black">{review.name}</h6>
-                          <span className="fs-7 lg:h6 opacity-70">
-                            {review.position}
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
             </div>
           </div>
         </div>

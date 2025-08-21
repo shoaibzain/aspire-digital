@@ -58,7 +58,7 @@ export default function Blogs() {
                             height="853"
                           />
                           <Link
-                            href={`/blog-details/${post.id}`}
+                            href={`/blog-details/${post.slug ?? post.id}`}
                             className="position-cover"
                             data-caption={post.imageAlt}
                           ></Link>
@@ -67,7 +67,7 @@ export default function Blogs() {
                           <h3 className="post-title panel h4 m-0">
                             <Link
                               className="text-none"
-                              href={`/blog-details/${post.id}`}
+                              href={`/blog-details/${post.slug ?? post.id}`}
                             >
                               {post.title}
                             </Link>
@@ -117,7 +117,7 @@ export default function Blogs() {
                                     alt={post.alt}
                                   />
                                   <Link
-                                    href={`/blog-details/${post.id}`}
+                                    href={`/blog-details/${post.slug ?? post.id}`}
                                     className="position-cover"
                                     data-caption={post.caption}
                                   ></Link>
@@ -128,12 +128,12 @@ export default function Blogs() {
                                   <span>{post.date}</span>
                                 </div>
                                 <h3 className="post-title panel h5 m-0">
-                                  <Link
-                                    className="text-none"
-                                    href={`/blog-details/${post.id}`}
-                                  >
-                                    {post.title}
-                                  </Link>
+                                    <Link
+                                      className="text-none"
+                                      href={`/blog-details/${post.slug ?? post.id}`}
+                                    >
+                                      {post.title}
+                                    </Link>
                                 </h3>
                               </div>
                             </div>
