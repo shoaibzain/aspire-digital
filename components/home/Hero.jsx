@@ -5,7 +5,7 @@ import VideoComponent from "./VideoComponent";
 
 export default function Hero() {
   return (
-    <div
+    <section
       id="overview"
       className="overview section panel overflow-hidden uc-dark lg:m-2 lg:rounded-3 "
     >
@@ -65,6 +65,6 @@ export default function Hero() {
           <VideoComponent />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

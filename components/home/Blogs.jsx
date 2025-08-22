@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Blogs() {
   return (
-    <div
+    <section
       id="insights"
       className="insights section panel overflow-hidden  scrollSpysection"
     >
@@ -189,6 +189,6 @@ export default function Blogs() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

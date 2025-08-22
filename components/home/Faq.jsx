@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Faq() {
   return (
-    <div id="faq" className="faq section panel  scrollSpysection">
+    <section id="faq" className="faq section panel  scrollSpysection">
       <div className="section-outer panel py-6 xl:py-10">
         <div className="container xl:max-w-xl">
           <div
@@ -53,6 +53,6 @@ export default function Faq() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

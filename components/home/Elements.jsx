@@ -6,17 +6,17 @@ import Image from "next/image";
 
 export default function Elements() {
   return (
-    <div
+    <section
       id="builder_elements"
       className="builder-elements section panel  scrollSpysection"
     >
-      <div className="section-outer panel pb-6 lg:pb-8 xl:pb-10">
+      <div className="section-outer panel py-4 overflow-hidden md:py-6 xl:py-10 mx-2 rounded-2 lg:rounded-3 dark:bg-gray-900">
         <div className="container xl:max-w-xl">
           <div
             className="section-inner panel vstack items-center gap-3 xl:gap-4 text-center max-w-100"
             data-anime="onview: -100; targets: >*; translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(200);"
           >
-            <h4 className="h2 m-0">Channel Partners</h4>
+            <h4 className="h2 m-0 text-white">Channel Partners</h4>
             <div className="panel w-100">
               <Swiper
                 className="swiper mask-x"
@@ -63,6 +63,6 @@ export default function Elements() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

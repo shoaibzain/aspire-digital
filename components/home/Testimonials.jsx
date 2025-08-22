@@ -5,11 +5,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 export default function Testimonials() {
   return (
-    <div
+    <section
       id="clients_feedback"
       className="clients-feedback section panel  scrollSpysection"
     >
-      <div className="section-outer panel py-6 lg:py-8 xl:py-10 bg-secondary text-black rounded-2 lg:rounded-3 m-2">
+      <div className="section-outer panel py-6 lg:py-8 xl:py-10 text-black rounded-2 lg:rounded-3 m-2">
         <div className="container xl:max-w-xl">
           <div
             className="section-inner panel vstack items-center gap-4 md:gap-6 lg:gap-8 max-w-100"
@@ -91,6 +91,6 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
