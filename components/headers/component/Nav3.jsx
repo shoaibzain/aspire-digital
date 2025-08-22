@@ -47,7 +47,7 @@ export default function Nav3() {
                 <li>
                   <a
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    onClick={openNewsletterModal}
+                   
                     role="button"
                   >
                     <span className="vstack gap-narrow mt-nnarrow">

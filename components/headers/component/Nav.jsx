@@ -10,23 +10,14 @@ export default function Nav() {
   return (
     <>
       <li>
-        <Link href={`/page-features`}>Features</Link>
+        <Link href={`/`}>Home</Link>
       </li>
       <li>
-        <Link href={`/page-pricing`}>Pricing</Link>
+        <Link href={`/about`}>About</Link>
       </li>
-      <li>
-        <Link href={`/blog`}>Insights</Link>
-      </li>
-      <li>
-        <Link href={`/page-about`}>About</Link>
-      </li>
-      <li>
-        <Link href={`/page-contact`}>Contact</Link>
-      </li>
-      <li className="has-dd-menu">
-        <a role="button" aria-haspopup="true">
-          More{" "}
+          <li className="has-dd-menu" style={{ position: "relative" }}>
+        <a href="#" role="button" aria-haspopup="true">
+          Our Services{" "}
           <span
             data-uc-navbar-parent-icon=""
             className="uc-icon uc-navbar-parent-icon"
@@ -41,78 +32,101 @@ export default function Nav() {
             </svg>
           </span>
         </a>
-        {/* uc-navbar-dropdown uc-drop uc-open */}
-
-        <div className={`uc-navbar-dropdown uc-drop w-100`}>
-          <div
-            className="uc-drop-grid row child-cols g-4 uc-grid uc-grid-stack"
-            data-uc-grid=""
-          >
+        <div
+          className="uc-navbar-dropdown w-600px ft-primary text-unset fs-6 fw-normal p-0 hide-scrollbar rounded-0 overflow-hidden uc-drop"
+          data-uc-drop="mode: click; offset: 0; boundary: !.uc-navbar; animation: uc-animation-slide-top-small; duration: 150;"
+        >
+          <div className="row child-cols-6 g-0 col-match">
             <div>
-              <div className="uc-drop-grid row child-cols g-4 uc-grid uc-grid-stack">
-                {pagesData.map((section, index) => (
-                  <div key={index}>
-                    <ul className="uc-nav uc-navbar-dropdown-nav">
-                      <li className="uc-nav-header">{section.header}</li>
-                      {section.items.map((item, itemIndex) => (
-                        <li key={itemIndex}>
-                          {item.href.startsWith("/") ? (
-                            <Link
-                              href={item.href}
-                              className={
-                                pathname.split("/")[1] ==
-                                item.href.split("/")[1]
-                                  ? "menuActive"
-                                  : "inActiveMenu"
-                              }
-                            >
-                              {item.label}
-                              {item.badge && (
-                                <span
-                                  className={`fw-bold fs-8 ms-1 px-1 border rounded-pill ${item.badge.className}`}
-                                >
-                                  {item.badge.text}
-                                </span>
-                              )}
-                            </Link>
-                          ) : (
-                            <a href={item.href}>
-                              {item.label}
-                              {item.badge && (
-                                <span
-                                  className={`fw-bold fs-8 ms-1 px-1 border rounded-pill ${item.badge.className}`}
-                                >
-                                  {item.badge.text}
-                                </span>
-                              )}
-                            </a>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="col-3">
-              <div className="panel w-100 overflow-hidden">
-                <div className="ratio ratio-3x4 overflow-hidden rounded">
-                  <Image
-                    alt="Let's build anything with Lexend!"
-                    src="/assets/images/template/menu-banner.jpg"
-                    width="544"
-                    height="660"
-                  />
+              <ul className="uc-nav uc-navbar-dropdown-nav p-2">
+                <li>
+                  <Link
+                    className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                    href={`/blog`}
+                  >
+                    <span className="vstack gap-narrow mt-nnarrow">
+                      <b className="fw-bold">Website Design</b>
+                    </span>
+                  </Link>
+                </li>
+                <li>
                   <a
-                    className="position-cover"
-                    href="https://themeforest.net/user/ib-themes/portfolio"
-                    target="_blank"
-                  ></a>
-                </div>
-              </div>
+                    className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                   
+                    role="button"
+                  >
+                    <span className="vstack gap-narrow mt-nnarrow">
+                      <b className="fw-bold">Designing Services</b>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <Link
+                    className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                    href={`#`}
+                  >
+                    <span className="vstack gap-narrow mt-nnarrow">
+                      <b className="fw-bold">SEO Services</b>
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                    href={`3`}
+                  >
+                    <span className="vstack gap-narrow mt-nnarrow">
+                      <b className="fw-bold">Digital Marketing</b>
+                    </span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul className="uc-nav uc-navbar-dropdown-nav p-2 h-100 bg-gray-25 dark:bg-gray-300 dark:bg-opacity-5">
+                <li>
+                  <Link
+                    className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                    href={`#`}
+                  >
+                    <span className="vstack gap-narrow mt-nnarrow">
+                      <b className="fw-bold">Creative Content Writing</b>
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                    href={`/contact`}
+                  >
+                    <span className="vstack gap-narrow mt-nnarrow">
+                      <b className="fw-bold">Social Media Marketing</b>
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                    href={`/contact`}
+                  >
+                    <span className="vstack gap-narrow mt-nnarrow">
+                      <b className="fw-bold">Enterprise Resource Planning</b>
+                    </span>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
+      </li>
+      <li>
+        <Link href={`/`}>Case Studies</Link>
+      </li>
+      <li>
+        <Link href={`/blog`}>Blogs</Link>
+      </li>
+      <li>
+        <Link href={`/contact`}>Contact Us</Link>
       </li>
     </>
   );

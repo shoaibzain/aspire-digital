@@ -5,7 +5,7 @@ export const metadata = {
   description:
     "description.",
 };
-export default function HomePage1() {
+export default function HomePage() {
   return (
     <>
       <Home />

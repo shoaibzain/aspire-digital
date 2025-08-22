@@ -83,7 +83,6 @@ export default function Footer2() {
                     </li>
                   ))}
                 </ul>
-                <div className="vr" />
                
               </div>
             </div>
