@@ -1,43 +1,38 @@
-export const slides = [
+export const ChannelPartners = [
   {
-    src: "/assets/images/common/icons/section.svg",
+    src: "/assets/images/common/channel-partners/logo-3.webp",
     alt: "Element : Section",
     label: "Section",
   },
   {
-    src: "/assets/images/common/icons/column.svg",
+    src: "/assets/images/common/channel-partners/logo-4.webp",
     alt: "Element : Column",
     label: "Column",
   },
   {
-    src: "/assets/images/common/icons/div.svg",
+    src: "/assets/images/common/channel-partners/logo-5.webp",
     alt: "Element : Div",
     label: "Div",
   },
   {
-    src: "/assets/images/common/icons/heading.svg",
+    src: "/assets/images/common/channel-partners/logo-6.webp",
     alt: "Element : Heading",
     label: "Heading",
   },
   {
-    src: "/assets/images/common/icons/form.svg",
+    src: "/assets/images/common/channel-partners/logo-7.webp",
     alt: "Element : Form",
     label: "Form",
   },
   {
-    src: "/assets/images/common/icons/button.svg",
+    src: "/assets/images/common/channel-partners/logo-8.webp",
     alt: "Element : Button",
     label: "Button",
   },
   {
-    src: "/assets/images/common/icons/divider.svg",
+    src: "/assets/images/common/channel-partners/logo-10.png",
     alt: "Element : Divider",
     label: "Divider",
-  },
-  {
-    src: "/assets/images/common/icons/spacer.svg",
-    alt: "Element : Spacer",
-    label: "Spacer",
   },
 ];
 

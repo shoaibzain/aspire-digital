@@ -1,5 +1,5 @@
 "use client";
-import { slideData, slideData2, slides } from "@/data/elements";
+import { ChannelPartners } from "@/data/elements";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -16,22 +16,23 @@ export default function Elements() {
             className="section-inner panel vstack items-center gap-3 xl:gap-4 text-center max-w-100"
             data-anime="onview: -100; targets: >*; translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(200);"
           >
-            <h4 className="h4 m-0">100+ Pro Elements and Widgets</h4>
+            <h4 className="h2 m-0">Channel Partners</h4>
             <div className="panel w-100">
               <Swiper
                 className="swiper mask-x"
                 slidesPerView={2.5}
                 spaceBetween={16}
-                centeredSlides={true}
+                centeredSlides={false}
                 loop={true}
-                modules={[Autoplay]}
+                freeMode={true}
+                freeModeMomentum={false}
+                speed={10000} // slower, smoother ticker
                 autoplay={{
-                  delay: 7000,
-                  disableOnInteraction: true,
-                  reverseDirection: true,
+                  delay: 0, // continuous
+                  disableOnInteraction: false,
                 }}
-                speed={7000}
-                allowTouchMove={false}
+                allowTouchMove={false} // disable manual dragging for pure ticker
+                modules={[Autoplay]}
                 breakpoints={{
                   768: {
                     slidesPerView: 3,
@@ -43,20 +44,17 @@ export default function Elements() {
                   },
                 }}
               >
-                {slides.map((slide, index) => (
+                {ChannelPartners.map((slide, index) => (
                   <SwiperSlide className="swiper-slide" key={index}>
-                    <div className="cstack gap-1 md:gap-2 p-1 md:p-2 border rounded-pill">
-                      <Image
-                        className="icon icon-1 md:icon-2 lg:icon-3 text-primary dark:text-secondary"
-                        src={slide.src}
-                        width={32}
-                        height={32}
-                        alt={slide.alt}
-                        data-uc-svg=""
-                      />
-                      <span className="fs-7 md:fs-6 lg:fs-5 fw-medium">
-                        {slide.label}
-                      </span>
+                    <div className="flex items-center justify-center p-3 md:p-4 rounded-s bg-[#f9f9f9]">
+                      <div className="w-28 h-16 relative">
+                        <Image
+                          src={slide.src}
+                          alt={slide.alt}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                     </div>
                   </SwiperSlide>
                 ))}
