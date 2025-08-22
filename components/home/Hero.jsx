@@ -50,7 +50,7 @@ export default function Hero() {
                     transform how you build websites.
                   </p>
                   <Link
-                    href={`/page-pricing`}
+                    href={`/contact`}
                     className="btn btn-md btn-primary min-w-150px mt-2"
                   >
                     <span>Get started</span>

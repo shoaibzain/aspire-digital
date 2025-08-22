@@ -23,17 +23,18 @@ export default function Faq() {
                     <span className="d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary" />
                     <span className="fs-8 fw-bold text-uppercase">FAQs</span>
                   </div>
-                  <h2 className="h3 lg:h2 m-0">Frequenlty Asked Questions</h2>
+                  <h2 className="h3 lg:h2 m-0">Frequently Asked Questions</h2>
                   <p className="fs-6 lg:fs-5">
-                    We’re looking for people who share our vision! most of our
-                    time used to be taken up by most of who created new websites
-                    for thier businesses.
+                    To help you make well-informed decisions for your business,
+                    we have addressed some of the most frequently asked
+                    questions asked by people who are looking for a digital
+                    marketing agency near me.
                   </p>
                   <Link
-                    href={`/page-contact`}
+                    href={`/contact`}
                     className="btn btn-sm lg:btn-md btn-primary px-3 mt-2"
                   >
-                    <span>Still have a question?</span>
+                    <span>Have Another Question?</span>
                     <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
                   </Link>
                 </div>

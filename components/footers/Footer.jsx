@@ -1,11 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import LanguageSelect from "../common/LanguageSelect";
 import { footerLinks4, socialLinks } from "@/data/footer";
 import Chatbot from "../chatbot/chatbot";
 
-export default function Footer5() {
+export default function Footer() {
   return (
     <>
       <Chatbot />
@@ -65,7 +64,7 @@ export default function Footer5() {
                   <ul className="nav-x justify-center gap-2 text-gray-300">
                     {socialLinks.map((link, index) => (
                       <li key={index}>
-                        <a href={link.href}>
+                        <a href={link.href} target="_blank">
                           <i className={`icon icon-2 ${link.iconClass}`} />
                         </a>
                       </li>

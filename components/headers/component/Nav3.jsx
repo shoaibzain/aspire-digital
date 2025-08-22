@@ -58,7 +58,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/page-features`}
+                    href={`#`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">SEO Services</b>
@@ -68,7 +68,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/page-features`}
+                    href={`3`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Digital Marketing</b>
@@ -82,7 +82,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/page-career`}
+                    href={`#`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Creative Content Writing</b>
@@ -92,7 +92,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/page-contact`}
+                    href={`/contact`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Social Media Marketing</b>
@@ -102,7 +102,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/page-contact`}
+                    href={`/contact`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Enterprise Resource Planning</b>

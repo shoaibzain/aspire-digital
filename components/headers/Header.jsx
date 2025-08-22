@@ -98,7 +98,7 @@ export default function Header5() {
               </div>
               <div className="uc-navbar-right">
                 <Link
-                  href={`/page-pricing`}
+                  href={`/contact`}
                   className="btn btn-sm btn-primary px-3 d-none lg:d-inline-flex"
                 >
                   <span>Let's Talk</span>
