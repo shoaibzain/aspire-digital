@@ -7,11 +7,13 @@ import React from "react";
 import Portfolio from "@/components/home/Portfolio";
 import Testimonials from "@/components/home/Testimonials";
 import Elements from "@/components/home/Elements";
+import Services from "@/components/home/Services";
+import Faq from "@/components/home/Faq";
 export const metadata = {
   title: "Home.",
   description: "Home description.",
 };
-export default function HomePage6() {
+export default function HomePage() {
   return (
     <>
       <div
@@ -24,8 +26,10 @@ export default function HomePage6() {
           <About />
           <Portfolio />
           <Testimonials />
+          <Services />
           <Blogs />
           <Elements />
+          <Faq />
         </div>
         <Footer />
       </div>

@@ -7,7 +7,7 @@ import About2 from "@/components/innerpages/About2";
 import AboutValues from "@/components/innerpages/AboutValues";
 
 
-import Team from "@/components/home/Team";
+
 import Cta from "@/components/innerpages/Cta";
 export const metadata = {
   title:
@@ -45,7 +45,7 @@ export default function AboutPage() {
           <AboutValues />
  
 
-          <Team />
+
           <Cta />
         </div>
         <Footer2 />
