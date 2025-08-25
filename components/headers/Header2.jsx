@@ -73,6 +73,8 @@ export default function Header2() {
                     />
                   </Link>
                 </div>
+              </div>
+              <div className="uc-navbar-center">
                 <ul className="uc-navbar-nav gap-3 xl:gap-4 d-none lg:d-flex fw-medium ms-2">
                   <Nav />
                 </ul>
@@ -80,11 +82,11 @@ export default function Header2() {
               <div className="uc-navbar-right">
                 <Link
                   className="btn btn-sm btn-primary text-white text-none d-none lg:d-inline-flex"
-                  href={`/contact`}
+                  href={`/contact-us`}
                 >
-                 Let's Talk
+                  Let's Talk
                 </Link>
-                
+
                 <a
                   className="d-block lg:d-none uc-icon uc-navbar-toggle-icon"
                   onClick={openMobileMenu}

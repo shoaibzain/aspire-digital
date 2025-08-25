@@ -1,38 +1,58 @@
 export const ChannelPartners = [
   {
-    src: "/assets/images/common/channel-partners/logo-3.webp",
+    src: "/assets/images/common/channel-partners/logo-1.webp",
     alt: "Element : Section",
     label: "Section",
   },
   {
-    src: "/assets/images/common/channel-partners/logo-4.webp",
+    src: "/assets/images/common/channel-partners/logo-2.webp",
     alt: "Element : Column",
     label: "Column",
   },
   {
-    src: "/assets/images/common/channel-partners/logo-5.webp",
+    src: "/assets/images/common/channel-partners/logo-3.webp",
     alt: "Element : Div",
     label: "Div",
   },
   {
-    src: "/assets/images/common/channel-partners/logo-6.webp",
+    src: "/assets/images/common/channel-partners/logo-4.webp",
     alt: "Element : Heading",
     label: "Heading",
   },
   {
-    src: "/assets/images/common/channel-partners/logo-7.webp",
+    src: "/assets/images/common/channel-partners/logo-5.webp",
     alt: "Element : Form",
     label: "Form",
   },
   {
-    src: "/assets/images/common/channel-partners/logo-8.webp",
+    src: "/assets/images/common/channel-partners/logo-6.webp",
     alt: "Element : Button",
     label: "Button",
   },
   {
-    src: "/assets/images/common/channel-partners/logo-10.png",
+    src: "/assets/images/common/channel-partners/logo-7.webp",
     alt: "Element : Divider",
     label: "Divider",
+  },
+  {
+    src: "/assets/images/common/channel-partners/logo-8.webp",
+    alt: "Element : Image",
+    label: "Image",
+  },
+  {
+    src: "/assets/images/common/channel-partners/logo-9.webp",
+    alt: "Element : Video",
+    label: "Video",
+  },
+  {
+    src: "/assets/images/common/channel-partners/logo-10.webp",
+    alt: "Element : Slider",
+    label: "Slider",
+  },
+  {
+    src: "/assets/images/common/channel-partners/logo-11.webp",
+    alt: "Element : Gallery",
+    label: "Gallery",
   },
 ];
 

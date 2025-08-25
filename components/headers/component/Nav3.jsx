@@ -8,10 +8,10 @@ export default function Nav3() {
         <Link href={`/`}>Home</Link>
       </li>
       <li>
-        <Link href={`/about`}>About</Link>
+        <Link href={`/about-us`}>About</Link>
       </li>
       <li className="has-dd-menu" style={{ position: "relative" }}>
-        <a href="#" role="button" aria-haspopup="true">
+        <Link href="/our-services" role="button" aria-haspopup="true">
           Our Services{" "}
           <span
             data-uc-navbar-parent-icon=""
@@ -26,7 +26,7 @@ export default function Nav3() {
               />
             </svg>
           </span>
-        </a>
+        </Link>
         <div
           className="uc-navbar-dropdown w-600px ft-primary text-unset fs-6 fw-normal p-0 hide-scrollbar rounded-0 overflow-hidden uc-drop"
           data-uc-drop="mode: click; offset: 0; boundary: !.uc-navbar; animation: uc-animation-slide-top-small; duration: 150;"
@@ -36,8 +36,8 @@ export default function Nav3() {
               <ul className="uc-nav uc-navbar-dropdown-nav p-2">
                 <li>
                   <Link
-                    className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/blog`}
+                    className="text-black hover:!text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
+                    href={`/website-design-development-services-in-karachi`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Website Design</b>
@@ -45,20 +45,20 @@ export default function Nav3() {
                   </Link>
                 </li>
                 <li>
-                  <a
+                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                   
+                    href={`/designing-services`}
                     role="button"
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Designing Services</b>
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`#`}
+                    href={`/seo-services-in-karachi`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">SEO Services</b>
@@ -68,7 +68,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`3`}
+                    href={`/digital-marketing`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Digital Marketing</b>
@@ -82,7 +82,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`#`}
+                    href={`/creative-content-writing-services-in-karachi`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Creative Content Writing</b>
@@ -92,7 +92,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/contact`}
+                    href={`/social-media-marketing-services-in-karachi`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Social Media Marketing</b>
@@ -102,7 +102,7 @@ export default function Nav3() {
                 <li>
                   <Link
                     className="text-black hstack items-start gap-2 p-2 hover:bg-gray-600 hover:bg-opacity-5 dark:hover:bg-white duration-150 rounded-1-5"
-                    href={`/contact`}
+                    href={`/enterprise-resource-planning`}
                   >
                     <span className="vstack gap-narrow mt-nnarrow">
                       <b className="fw-bold">Enterprise Resource Planning</b>
@@ -116,13 +116,13 @@ export default function Nav3() {
       </li>
       
       <li>
-        <Link href={`/`}>Case Studies</Link>
+        <Link href={`/case-studies`}>Case Studies</Link>
       </li>
       <li>
-        <Link href={`/blog`}>Blogs</Link>
+        <Link href={`/blogs`}>Blogs</Link>
       </li>
       <li>
-        <Link href={`/contact`}>Contact Us</Link>
+        <Link href={`/contact-us`}>Contact Us</Link>
       </li>
     </>
   );

@@ -19,19 +19,13 @@ export default function Faq() {
                   hidden=""
                 />
                 <div className="panel vstack items-start gap-2 uc-sticky">
-                  <div className="cstack gap-1 py-1 px-3 border rounded-pill">
-                    <span className="d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary" />
-                    <span className="fs-8 fw-bold text-uppercase">FAQs</span>
-                  </div>
+                
                   <h2 className="h3 lg:h2 m-0">Frequently Asked Questions</h2>
                   <p className="fs-6 lg:fs-5">
-                    To help you make well-informed decisions for your business,
-                    we have addressed some of the most frequently asked
-                    questions asked by people who are looking for a digital
-                    marketing agency near me.
+                    To help you make well-informed decisions for your business, we have addressed some of the most frequently asked questions asked by people who are looking for a digital marketing agency near me.
                   </p>
                   <Link
-                    href={`/contact`}
+                    href={`/contact-us`}
                     className="btn btn-sm lg:btn-md btn-primary px-3 mt-2"
                   >
                     <span>Have Another Question?</span>

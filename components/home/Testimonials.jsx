@@ -44,8 +44,8 @@ export default function Testimonials() {
                 modules={[Autoplay]}
                 autoplay={{
                   delay: 0, // Negative delay is not valid, setting to 0 for continuous autoplay
-                  disableOnInteraction: true,
-                  pauseOnMouseEnter: true,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: false,
                 }}
                 allowTouchMove={false}
                 breakpoints={{
@@ -58,7 +58,7 @@ export default function Testimonials() {
               >
                 {slidesData.map((slide, index) => (
                   <SwiperSlide className="swiper-slide" key={index}>
-                    <div className="panel vstack justify-between gap-3 p-3 lg:p-4 xl:p-6 bg-white text-black rounded-1-5 h-100">
+                    <div className="panel vstack justify-between gap-3 p-3 lg:p-4 xl:p-6 bg-[#f9f9f9] text-black rounded-1-5 h-100">
                       <div className="panel vstack items-start gap-2 lg:gap-4">
                         <div className="rating d-flex gap-0">
                           {Array.from({ length: slide.rating }).map((_, i) => (

@@ -24,9 +24,9 @@ export default function Elements() {
                 spaceBetween={16}
                 centeredSlides={false}
                 loop={true}
-                freeMode={true}
+                freeMode={false}
                 freeModeMomentum={false}
-                speed={10000} // slower, smoother ticker
+                speed={1000} // slower, smoother ticker
                 autoplay={{
                   delay: 0, // continuous
                   disableOnInteraction: false,
@@ -46,8 +46,8 @@ export default function Elements() {
               >
                 {ChannelPartners.map((slide, index) => (
                   <SwiperSlide className="swiper-slide" key={index}>
-                    <div className="flex items-center justify-center p-3 md:p-4 rounded-s bg-[#f9f9f9]">
-                      <div className="w-28 h-16 relative">
+                    <div className="flex items-center justify-center p-2 md:p-4 rounded-s bg-white">
+                      <div className="w-32 h-20 relative">
                         <Image
                           src={slide.src}
                           alt={slide.alt}

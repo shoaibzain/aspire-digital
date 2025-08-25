@@ -89,7 +89,7 @@ export default function MobileMenu() {
             >
               <Image
                 className="w-32px"
-                alt="Lexend"
+                alt="Aspire Digital"
                 src="/assets/images/common/logo-mark.svg"
                 width="34"
                 height="34"
@@ -229,18 +229,6 @@ export default function MobileMenu() {
                 )}
               </li>
             ))}
-            <li className="hr opacity-10 my-1" />
-            <li>
-              <Link href={`/sign-up`}>Create an account</Link>
-            </li>
-            <li>
-              <Link href={`/sign-in`}>Log in</Link>
-            </li>
-            <li>
-              <a href="https://themeforest.net/user/ib-themes/portfolio">
-                Buy Template
-              </a>
-            </li>
           </ul>
           <ul className="social-icons nav-x mt-4">
             <li>
@@ -256,7 +244,7 @@ export default function MobileMenu() {
             data-uc-sticky="position: bottom"
           >
             <div className="vstack gap-1">
-              <span className="fs-7 opacity-60">Select theme:</span>
+              <span className="fs-7 opacity-60">Light/Dark:</span>
               <div className="darkmode-trigger" data-darkmode-switch="">
                 <label className="switch">
                   <input

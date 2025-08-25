@@ -50,19 +50,14 @@ export default function Portfolio() {
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
               >
                 <div className="vstack items-center lg:items-start gap-2 text-center lg:text-start ">
-                  <div className="cstack gap-1 py-1 px-3 border rounded-pill border-white">
-                    <span className="d-inline-block w-4px h-4px rounded-circle bg-white" />
-                    <span className="fs-8 fw-bold text-uppercase">
-                      Our Work
-                    </span>
-                  </div>
+               
                   <h2 className="title h3 lg:h2 xl:h1 m-0 px-2">
                     10+ Years Experience
                   </h2>
                 </div>
                 <div>
                   <Link
-                    href={`/blog`}
+                    href={`/case-studies`}
                     className="btn btn-sm lg:btn-md btn-primary px-3"
                   >
                     <span>View all</span>

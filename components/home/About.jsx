@@ -97,7 +97,7 @@ export default function About() {
                   </p>
 
                   <Link
-                    href="/about"
+                    href="/about-us"
                     className="btn btn-sm lg:btn-md btn-primary px-3 md:mt-2 lg:mt-4"
                   >
                     <span>More about us</span>

@@ -63,7 +63,7 @@ export default function Header5() {
                     {!scrolledPast && (
                       <Image
                         alt="Aspire Digital"
-                         src="/assets/images/common/logo-dark.svg"
+                        src="/assets/images/common/logo-dark.svg"
                         width={117}
                         height={40}
                       />
@@ -73,7 +73,7 @@ export default function Header5() {
                     {scrolledPast && (
                       <Image
                         alt="Aspire Digital"
-                         src="/assets/images/common/logo-light.svg"
+                        src="/assets/images/common/logo-light.svg"
                         width={117}
                         height={40}
                       />
@@ -84,21 +84,11 @@ export default function Header5() {
               <div className="uc-navbar-center">
                 <ul className="uc-navbar-nav gap-3 xl:gap-5 d-none lg:d-flex fs-5 fw-medium scrollSpyLinks">
                   <Nav3 />
-                  {/* {navItems.map((item, index) => (
-                    <li key={index}>
-                      <a
-                        className={item.active ? "uc-active" : ""}
-                        href={item.href}
-                      >
-                        {item.label}
-                      </a>
-                    </li>
-                  ))} */}
                 </ul>
               </div>
               <div className="uc-navbar-right">
                 <Link
-                  href={`/contact`}
+                  href={`/contact-us`}
                   className="btn btn-sm btn-primary px-3 d-none lg:d-inline-flex"
                 >
                   <span>Let's Talk</span>

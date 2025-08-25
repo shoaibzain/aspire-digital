@@ -1,7 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { footerLinks4, socialLinks } from "@/data/footer";
+import {
+  footerLinks,
+  infoLinks,
+  socialLinks,
+  bottomLinks,
+} from "@/data/footer";
 import Chatbot from "../chatbot/chatbot";
 
 export default function Footer() {
@@ -17,29 +22,30 @@ export default function Footer() {
             <div className="container xl:max-w-xl">
               <div className="uc-footer-inner vstack gap-4 lg:gap-6 xl:gap-8">
                 <div className="uc-footer-widgets panel">
-                  <div className="row child-cols-6 md:child-cols col-match g-4">
-                    <div className="col-12 lg:col-6">
-                      <div className="panel vstack items-start gap-3 xl:gap-4 lg:max-w-1/2">
-                        <div>
-                          <Link href={`/`} style={{ width: 140 }}>
-                            <Image
-                              className="text-primary"
-                              alt="Lexend"
-                              src="/assets/images/common/logo-dark.svg"
-                              width="117"
-                              height="40"
-                            />
-                          </Link>
-                          <p className="mt-2">
-                            Design amazing digital experiences that create more
-                            happy in the world.
-                          </p>
-                        </div>
-                      </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                    <div>
+                      <Link href={`/`} style={{ width: 240 }}>
+                        <Image
+                          className="text-primary"
+                          alt="Lexend"
+                          src="/assets/images/common/logo-dark.svg"
+                          width="180"
+                          height="90"
+                        />
+                      </Link>
+                      <ul className="nav-x justify-start gap-2 text-gray-300 mt-3">
+                        {socialLinks.map((link, index) => (
+                          <li key={index}>
+                            <a href={link.href} target="_blank">
+                              <i className={`icon icon-2 ${link.iconClass}`} />
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    {footerLinks4.map((section, index) => (
+                    {footerLinks.map((section, index) => (
                       <div key={index} className={section.extraClass || ""}>
-                        <ul className="nav-y gap-2 fw-medium">
+                        <ul className="nav-y gap-1 fw-regular">
                           <li className="fs-7 text-uppercase dark:text-gray-300">
                             {section.title}
                           </li>
@@ -55,17 +61,42 @@ export default function Footer() {
                         </ul>
                       </div>
                     ))}
+                    <div>
+                      {infoLinks.map((section, index) => (
+                        <div key={index} className={section.extraClass || ""}>
+                          <ul className="nav-y gap-1 fw-regular">
+                            <li
+                              className={`fs-7 text-uppercase dark:text-gray-300 ${
+                                index === 1 ? "mt-3" : ""
+                              }`}
+                            >
+                              {section.title}
+                            </li>
+                            {section.links.map((link, linkIndex) => (
+                              <li key={linkIndex}>
+                                {link.isLink ? (
+                                  <Link href={link.href}>{link.text}</Link>
+                                ) : (
+                                  <a href={link.href}>{link.text}</a>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className="uc-footer-bottom panel vstack lg:hstack gap-4 justify-between text-center pt-4 lg:pt-6 border-top dark:text-white">
-                  <p className="opacity-60">
-                    Aspire Digital © 2025, All rights reserved.
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-1 text-center pt-4 lg:pt-6 border-top dark:text-white">
+                  <p className="opacity-60 md:text-left">
+                    Aspire Digital © {new Date().getFullYear()}, All rights
+                    reserved.
                   </p>
-                  <ul className="nav-x justify-center gap-2 text-gray-300">
-                    {socialLinks.map((link, index) => (
+                  <ul className="nav-x bottomlink gap-1 text-gray-300">
+                    {bottomLinks.map((link, index) => (
                       <li key={index}>
-                        <a href={link.href} target="_blank">
-                          <i className={`icon icon-2 ${link.iconClass}`} />
+                        <a href={link.href} className="hover:text-primary">
+                          {link.text}
                         </a>
                       </li>
                     ))}

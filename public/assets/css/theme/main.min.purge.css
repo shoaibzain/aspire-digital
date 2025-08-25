@@ -2060,6 +2060,10 @@ header.uc-header.header-six > :not(.uc-navbar-sticky) .uc-navbar-main a:hover {
   color: #fff !important;
   opacity: 0.7;
 }
+header.uc-header.header-six > :not(.uc-navbar-sticky) .uc-navbar-main .uc-navbar-dropdown-nav a:hover {
+  color: black !important;
+  opacity: 0.7;
+}
 header.uc-header.header-six .uc-navbar-nav > li.uc-active > a {
   color: var(--color-primary);
 }

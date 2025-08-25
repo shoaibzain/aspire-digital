@@ -21,12 +21,7 @@ export default function Blogs() {
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
               >
                 <div className="vstack items-center lg:items-start gap-2 text-center lg:text-start ">
-                  <div className="cstack gap-1 py-1 px-3 border rounded-pill">
-                    <span className="d-inline-block w-4px h-4px rounded-circle bg-primary dark:bg-secondary" />
-                    <span className="fs-8 fw-bold text-uppercase">
-                      Insights
-                    </span>
-                  </div>
+               
                   <h2 className="title h3 lg:h2 xl:h1 m-0 px-2">
                     Latest posts, tutorials{" "}
                     <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
@@ -36,7 +31,7 @@ export default function Blogs() {
                 </div>
                 <div>
                   <Link
-                    href={`/blog`}
+                    href={`/blogs`}
                     className="btn btn-sm lg:btn-md btn-primary px-3"
                   >
                     <span>View all posts</span>
