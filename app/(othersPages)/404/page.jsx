@@ -2,7 +2,6 @@ import Header2 from "@/components/headers/Header2";
 
 import Footer2 from "@/components/footers/Footer2";
 import Breadcumb from "@/components/otherPages/Breadcumb";
-import Notfound from "@/components/otherPages/404";
 export const metadata = {
   title:
     "Not Found || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -16,7 +15,6 @@ export default function page() {
         <Header2 />
         <div id="wrapper" className="wrap">
           <Breadcumb />
-          <Notfound />
         </div>
         <Footer2 />
       </div>

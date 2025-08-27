@@ -1,4 +1,4 @@
-import { panelsData } from "@/data/facts";
+
 import React from "react";
 import Image from "next/image";
 
@@ -58,21 +58,7 @@ export default function About2() {
               </p>
               <div className="panel mt-6">
                 <div className="row child-cols-6 lg:child-cols-4 justify-center g-3 col-match">
-                  {panelsData.map((panel, index) => (
-                    <div key={index}>
-                      <div className="panel vstack gap-1">
-                        <h4 className="h2 xl:h1 m-0">
-                          <span data-anime={panel.animationData}>
-                            {panel.value}
-                          </span>
-                          {panel.suffix && panel.suffix}
-                        </h4>
-                        <p className="fs-6 lg:fs-5 text-dark dark:text-white text-opacity-70 text-nowrap">
-                          {panel.text}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
+                 
                 </div>
               </div>
             </div>

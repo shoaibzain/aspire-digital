@@ -4,8 +4,6 @@ import Footer2 from "@/components/footers/Footer2";
 import Contact1 from "@/components/innerpages/Contact1";
 import ContactLinks from "@/components/innerpages/ContactLinks";
 import Faq from "@/components/home/Faq";
-import Brands from "@/components/common/Brands2";
-import Blogs from "@/components/home/Blogs";
 export const metadata = {
   title:
     "Contact",

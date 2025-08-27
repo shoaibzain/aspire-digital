@@ -3,7 +3,7 @@ import Header2 from "@/components/headers/Header2";
 import Footer2 from "@/components/footers/Footer2";
 import Newsletter from "@/components/blog/Newsletter";
 import BreadCumb from "@/components/blog/BreadCumb";
-import Blogs3 from "@/components/blog/Blogs3";
+
 export const metadata = {
   title:
     "Blog Category || Lexend - Full-featured, professional-looking software, saas and startup nextjs template.",
@@ -18,7 +18,7 @@ export default function BlogCategoryPage({ params }) {
         <Header2 />
         <div id="wrapper" className="wrap">
           <BreadCumb category={category} />
-          <Blogs3 category={category} />
+       
           <Newsletter />
         </div>
         <Footer2 />
