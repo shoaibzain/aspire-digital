@@ -21,7 +21,6 @@ export default function Blogs() {
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
               >
                 <div className="vstack items-center lg:items-start gap-2 text-center lg:text-start ">
-               
                   <h2 className="title h3 lg:h2 xl:h1 m-0 px-2">
                     Latest posts, tutorials{" "}
                     <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
@@ -53,7 +52,7 @@ export default function Blogs() {
                             height="853"
                           />
                           <Link
-                            href={`/blog-details/${post.slug ?? post.id}`}
+                            href={`/${post.slug ?? post.id}`}
                             className="position-cover"
                             data-caption={post.imageAlt}
                           ></Link>
@@ -62,7 +61,7 @@ export default function Blogs() {
                           <h3 className="post-title panel h4 m-0">
                             <Link
                               className="text-none"
-                              href={`/blog-details/${post.slug ?? post.id}`}
+                              href={`/${post.slug ?? post.id}`}
                             >
                               {post.title}
                             </Link>
@@ -71,18 +70,9 @@ export default function Blogs() {
                             {post.excerpt}
                           </p>
                           <div className="post-meta hstack gap-1 panel overflow-hidden mt-2">
-                            <Link href={`/blog-author/Amir Khan`}>
-                              <Image
-                                alt={post.authorName}
-                                className="w-40px h-40px rounded-circle"
-                                src={post.authorImage}
-                                width="150"
-                                height="150"
-                              />
-                            </Link>
                             <div className="vstack gap-0">
                               <Link
-                                href={`/blog-author/Amir Khan`}
+                                href={`/${post.slug ?? post.id}`}
                                 className="text-none fw-bold text-black dark:text-white"
                               >
                                 {post.authorName}
@@ -91,6 +81,11 @@ export default function Blogs() {
                                 <span>{post.date}</span>
                               </div>
                             </div>
+                            <Link className="post-link hstack gap-narrow fs-7"
+                              href={`/${post.slug ?? post.id}`}
+                            >
+                              Read more
+                            </Link>
                           </div>
                         </div>
                       </article>
@@ -112,7 +107,7 @@ export default function Blogs() {
                                     alt={post.alt}
                                   />
                                   <Link
-                                    href={`/blog-details/${post.slug ?? post.id}`}
+                                    href={`/${post.slug ?? post.id}`}
                                     className="position-cover"
                                     data-caption={post.caption}
                                   ></Link>
@@ -125,7 +120,7 @@ export default function Blogs() {
                                 <h3 className="post-title panel h5 m-0">
                                     <Link
                                       className="text-none"
-                                      href={`/blog-details/${post.slug ?? post.id}`}
+                                      href={`/${post.slug ?? post.id}`}
                                     >
                                       {post.title}
                                     </Link>
@@ -153,7 +148,7 @@ export default function Blogs() {
                                     alt={post.alt}
                                   />
                                   <Link
-                                    href={`/blog-details/${post.id}`}
+                                    href={`/${post.id}`}
                                     className="position-cover"
                                     data-caption={post.caption}
                                   ></Link>
@@ -164,12 +159,12 @@ export default function Blogs() {
                                   <span>{post.date}</span>
                                 </div>
                                 <h3 className="post-title panel h5 m-0">
-                                  <Link
-                                    className="text-none"
-                                    href={`/blog-details/${post.id}`}
-                                  >
-                                    {post.title}
-                                  </Link>
+                                    <Link
+                                      className="text-none"
+                                      href={`/${post.id}`}
+                                    >
+                                      {post.title}
+                                    </Link>
                                 </h3>
                               </div>
                             </div>

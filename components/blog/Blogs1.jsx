@@ -64,7 +64,7 @@ export default function Blogs1() {
                             alt="Maximizing your reach with marketing strategies"
                           />
                           <Link
-                            href={`/blog-details/${elm.id}`}
+                            href={`/${elm.slug ?? elm.id}`}
                             className="position-cover"
                             data-caption="Maximizing your reach with marketing strategies"
                           ></Link>
@@ -81,7 +81,7 @@ export default function Blogs1() {
                           <h3 className="h4 xl:h2 m-0 text-center m-0 lg:w-500px lg:m-auto">
                             <Link
                               className="text-none"
-                              href={`/blog-details/${elm.id}`}
+                              href={`/${elm.slug ?? elm.id}`}
                             >
                               {elm.title}
                             </Link>
@@ -116,7 +116,7 @@ export default function Blogs1() {
                           </p>
                           <Link
                             className="btn btn-text text-primary border-bottom d-inline-flex fs-7 lg:fs-6 sm:mt-2"
-                            href={`/blog-details/${elm.id}`}
+                            href={`/${elm.slug ?? elm.id}`}
                           >
                             Continue reading
                           </Link>
@@ -145,7 +145,7 @@ export default function Blogs1() {
                         alt="Top 5 reasons to invest in marketing"
                       />
                       <Link
-                        href={`/blog-details/${elm.id}`}
+                        href={`/${elm.slug ?? elm.id}`}
                         className="position-cover"
                         data-caption="Top 5 reasons to invest in marketing"
                       ></Link>
@@ -154,7 +154,7 @@ export default function Blogs1() {
                       <h3 className="h5 xl:h4 m-0 text-center m-0">
                         <Link
                           className="text-none"
-                          href={`/blog-details/${elm.id}`}
+                          href={`/${elm.slug ?? elm.id}`}
                         >
                           {elm.title}
                         </Link>

@@ -29,13 +29,10 @@ export default function BlogDetails1({ blogItem }) {
               <i className="unicon-chevron-right fw-medium opacity-50 rtl:rotate-180" />
             </li>
             <li>
-              <Link href={`/blog`}>Blog</Link>
+              <Link href={`/blogs`}>Blog</Link>
             </li>
             <li>
               <i className="unicon-chevron-right fw-medium opacity-50 rtl:rotate-180" />
-            </li>
-            <li>
-              <Link href={`/blog-category/Strategy`}>Strategy</Link>
             </li>
             <li>
               <i className="unicon-chevron-right fw-medium opacity-50 rtl:rotate-180" />
@@ -478,7 +475,7 @@ export default function BlogDetails1({ blogItem }) {
                       height="853"
                     />
                     <Link
-                      href={`/blog-details/1`}
+                      href={`/ux-review-presentations`}
                       className="position-cover"
                       data-caption="How can marketing help your business?"
                     ></Link>
@@ -491,7 +488,7 @@ export default function BlogDetails1({ blogItem }) {
                   </h6>
                 </div>
                 <Link
-                  href={`/blog-details/1`}
+                  href={`/ux-review-presentations`}
                   className="position-cover"
                 ></Link>
               </div>
@@ -512,14 +509,14 @@ export default function BlogDetails1({ blogItem }) {
                       height="853"
                     />
                     <Link
-                      href={`/blog-details/1`}
+                      href={`/ux-review-presentations`}
                       className="position-cover"
                       data-caption="Top 5 reasons to invest in marketing"
                     ></Link>
                   </figure>
                 </div>
                 <Link
-                  href={`/blog-details/1`}
+                  href={`/ux-review-presentations`}
                   className="position-cover"
                 ></Link>
               </div>

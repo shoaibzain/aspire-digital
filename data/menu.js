@@ -230,15 +230,15 @@ export const pagesData = [
         label: "Author",
       },
       {
-        href: "/blog-details/1",
+  href: "/ux-review-presentations",
         label: "Blog single",
       },
       {
-        href: "/blog-details-2/2",
+  href: "/migrating-to-linear-101",
         label: "Blog single v2",
       },
       {
-        href: "/blog-details-3/2",
+  href: "/building-your-api-stack",
         label: "Blog single v3",
       },
     ],
@@ -411,14 +411,14 @@ export const othermenuItems = [
   { href: "/page-contact", icon: "unicon-wikis", title: "Contact" },
   { href: "/page-contact-2", icon: "unicon-wikis", title: "Contact v2" },
   { href: "/blog", icon: "unicon-course", title: "Blog" },
-  { href: "/blog-details/1", icon: "unicon-course", title: "Blog details" },
+  { href: "/ux-review-presentations", icon: "unicon-course", title: "Blog details" },
   {
-    href: "/blog-details-2/2",
+  href: "/migrating-to-linear-101",
     icon: "unicon-course",
     title: "Blog details v2",
   },
   {
-    href: "/blog-details-3/2",
+  href: "/building-your-api-stack",
     icon: "unicon-course",
     title: "Blog details v3",
   },
