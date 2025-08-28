@@ -4,8 +4,6 @@ import "./globals.css";
 import "../public/assets/css/main.css";
 import "../public/assets/custom.scss";
 import "react-modal-video/scss/modal-video.scss";
-import "photoswipe/dist/photoswipe.css";
-import "rc-slider/assets/index.css";
 import { useEffect } from "react";
 import anime from "animejs";
 import { usePathname } from "next/navigation";
@@ -13,8 +11,6 @@ import MobileMenu from "@/components/headers/component/MobileMenu";
 import BacktoTop from "@/components/common/BacktoTop";
 import { ParallaxProvider } from "react-scroll-parallax";
 import ContactModal from "@/components/modals/ContactModal";
-import NewsletterModal from "@/components/modals/NewsletterModal";
-import SearchModal from "@/components/modals/SearchModal";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
@@ -106,8 +102,6 @@ export default function RootLayout({ children }) {
           <ParallaxProvider>{children}</ParallaxProvider>
           <MobileMenu />
           <ContactModal />
-          <NewsletterModal />
-          <SearchModal />
           <BacktoTop />
         </Context>
       </body>

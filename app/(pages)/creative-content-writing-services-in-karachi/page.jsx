@@ -14,7 +14,7 @@ export default function Page() {
         <Header2 />
         <div id="wrapper" className="wrap">
           <Faq
-            faqType="accordionItems2"
+            faqType="accordionItemscontentwriting"
             description="To make the most informed decision for your business, we have answered some of the most common content development services Karachi questions."
           />
         </div>

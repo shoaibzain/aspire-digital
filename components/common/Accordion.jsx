@@ -55,7 +55,7 @@ export default function Accordion({ faqData = [], parentClass = "" }) {
 
   return (
     <>
-  {items.map((item, index) => (
+      {items.map((item, index) => (
         <li
           ref={(el) => (parentRefs.current[index] = el)}
           className={`${
@@ -78,7 +78,25 @@ export default function Accordion({ faqData = [], parentClass = "" }) {
             className="uc-accordion-content"
             ref={(el) => (answerRefs.current[index] = el)}
           >
-            <p>{item.answer}</p>
+            {Array.isArray(item.answer) ? (
+              item.answer.map((block, i) => {
+                if (block.type === "paragraph") {
+                  return <p key={i}>{block.content}</p>;
+                }
+                if (block.type === "list") {
+                  return (
+                    <ul key={i} className="list-disc pl-6">
+                      {block.items.map((li, j) => (
+                        <li key={j}>{li}</li>
+                      ))}
+                    </ul>
+                  );
+                }
+                return null;
+              })
+            ) : (
+              <p>{item.answer}</p>
+            )}
           </div>
         </li>
       ))}

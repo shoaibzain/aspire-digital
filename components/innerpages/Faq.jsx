@@ -7,7 +7,7 @@ export default function Faq({
   faqType = "accordionItems",
   title = "Frequently Asked Questions",
   description = `To help you make well-informed decisions for your business, we have addressed some of the most frequently asked questions asked by people who are looking for a digital marketing agency near me.`,
-}) {
+}) { 
   // select the requested faq data export, fall back to default 'accordionItems'
   const data = faqData[faqType] ?? faqData.accordionItems;
   return (
@@ -26,9 +26,11 @@ export default function Faq({
                   hidden=""
                 />
                 <div className="panel vstack items-start gap-2 uc-sticky">
-                
                   <h2 className="h3 lg:h2 m-0">{title}</h2>
-                  <p className="fs-6 lg:fs-5">{description}</p>
+                  <p
+                    className="fs-6 lg:fs-5"
+                    dangerouslySetInnerHTML={{ __html: description }}
+                  />
                   <Link
                     href={`/contact-us`}
                     className="btn btn-sm lg:btn-md btn-primary px-3 mt-2"
@@ -38,7 +40,7 @@ export default function Faq({
                   </Link>
                 </div>
               </div>
-              <div className="lg:col-6">
+              <div className="lg:col-7">
                 <div className="panel">
                   <ul
                     className="gap-2 uc-accordion"
