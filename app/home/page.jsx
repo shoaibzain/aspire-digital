@@ -8,10 +8,10 @@ import Portfolio from "@/components/home/Portfolio";
 import Testimonials from "@/components/home/Testimonials";
 import Elements from "@/components/home/Elements";
 import Services from "@/components/home/Services";
-import Faq from "@/components/home/Faq";
+import Faq from "@/components/innerpages/Faq";
 export const metadata = {
-  title: "Home.",
-  description: "Home description.",
+  title: "Top Reasons to Choose the Best Digital Marketing Agency in Karachi",
+  description: "Discover Top powerful ways Aspire Digital Marketing Agency in Karachi can boost your business with expert SEO, web design & social media marketing. Try us today!",
 };
 export default function HomePage() {
   return (
@@ -29,7 +29,7 @@ export default function HomePage() {
           <Services />
           <Blogs />
           <Elements />
-          <Faq />
+          <Faq faqType="accordionItems" />
         </div>
         <Footer />
       </div>

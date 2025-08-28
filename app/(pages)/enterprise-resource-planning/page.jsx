@@ -4,11 +4,11 @@ import Footer from "@/components/footers/Footer";
 import Faq from "@/components/home/Faq";
 export const metadata = {
   title:
-    "Case Studies | Showcasing Success Stories in Digital Marketing",
+    "ERP Solutions | Streamline Operations with Aspire Digital.pk",
   description:
-    "Discover our Case Studies showcasing success stories, projects, and campaigns. See how we've helped businesses in Karachi achieve their goals.",
+    "Explore the world of Enterprise Resource Planning solutions and discover how they can revolutionize your business operations.",
 };
-export default function CaseStudie() {
+export default function Page() {
   return (
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">

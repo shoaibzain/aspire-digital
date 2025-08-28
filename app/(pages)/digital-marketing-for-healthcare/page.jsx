@@ -3,12 +3,10 @@ import Header2 from "@/components/headers/Header2";
 import Footer from "@/components/footers/Footer";
 import Faq from "@/components/home/Faq";
 export const metadata = {
-  title:
-    "Case Studies | Showcasing Success Stories in Digital Marketing",
-  description:
-    "Discover our Case Studies showcasing success stories, projects, and campaigns. See how we've helped businesses in Karachi achieve their goals.",
+  title: "Digital Marketing For Healthcare | Aspire Digital",
+  description: "Enhance your healthcare practice's online presence with Aspire Digital's specialized digital marketing for healthcare to reach your goal.",
 };
-export default function CaseStudie() {
+export default function Page() {
   return (
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">

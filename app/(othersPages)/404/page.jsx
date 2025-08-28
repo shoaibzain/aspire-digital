@@ -1,6 +1,6 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer from "@/components/footers/Footer";
 import Breadcumb from "@/components/otherPages/Breadcumb";
 export const metadata = {
   title:
@@ -16,7 +16,7 @@ export default function page() {
         <div id="wrapper" className="wrap">
           <Breadcumb />
         </div>
-        <Footer2 />
+        <Footer />
       </div>
     </>
   );

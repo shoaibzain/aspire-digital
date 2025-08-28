@@ -38,30 +38,49 @@ export const accordionItems = [
     expanded: false,
   },
 ];
-
+ 
+// creative-content-writing-services-in-karachi
 export const accordionItems2 = [
   {
-    id: 23,
-    title: "Manage tasks",
-    icon: "/assets/images/common/icons/zap.svg",
-    content:
-      "Offers a unified platform that fosters innovation while providing end-to-end data management.",
-    isOpen: false,
+    id: 1,
+    title: "How much does a new website cost?",
+    icon: "/assets/images/common/icons/price-tag.svg",
+    content: "There's no single answer—it depends on the project. Design and development packages range from $65 to $650, depending on your needs.",
+    isOpen: false
   },
   {
-    id: 25,
-    title: "Set priorities",
-    icon: "/assets/images/common/icons/target.svg",
-    content:
-      "Providing end-to-end data management. See how we help your team solve today’s biggest challenges.",
-    isOpen: false,
+    id: 2,
+    title: "Will I be able to update the site myself when it’s finished?",
+    icon: "/assets/images/common/icons/video.svg",
+    content: "Yes. We provide comprehensive video tutorials and a training session so you can manage your site on your own.",
+    isOpen: false
   },
   {
-    id: 27,
-    title: "Collaborate with your team",
-    icon: "/assets/images/common/icons/settings.svg",
-    content:
-      "Our shared team inboxes keep everyone on the same page and in the loop.",
-    isOpen: true,
+    id: 3,
+    title: "Will my website be mobile‑friendly?",
+    icon: "/assets/images/common/icons/mobile.svg",
+    content: "Absolutely! We ensure your site looks great and works well across all devices.",
+    isOpen: false
   },
+  {
+    id: 4,
+    title: "How long does it take to build a website?",
+    icon: "/assets/images/common/icons/clock.svg",
+    content: "Typically it takes about 6–10 weeks to complete, assuming all required materials are provided promptly.",
+    isOpen: false
+  },
+  {
+    id: 5,
+    title: "What will you need from me?",
+    icon: "/assets/images/common/icons/upload.svg",
+    content: "Depending on your package, we may need images (you, your team, workplace), website content (text, PDFs), staff profiles, videos, and existing site login details.",
+    isOpen: false
+  },
+  {
+    id: 6,
+    title: "Will you maintain my website for me?",
+    icon: "/assets/images/common/icons/tools.svg",
+    content: "Yes. We offer ongoing, professional maintenance to keep your site secure, up‑to‑date, and high‑performing.",
+    isOpen: false
+  }
 ];

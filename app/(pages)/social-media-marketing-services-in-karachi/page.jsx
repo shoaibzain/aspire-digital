@@ -4,11 +4,11 @@ import Footer from "@/components/footers/Footer";
 import Faq from "@/components/home/Faq";
 export const metadata = {
   title:
-    "Case Studies | Showcasing Success Stories in Digital Marketing",
+    "Top Social Media Marketing Services in Karachi | Aspire Digital",
   description:
-    "Discover our Case Studies showcasing success stories, projects, and campaigns. See how we've helped businesses in Karachi achieve their goals.",
+    "Take your brand to top heights with our result-driven top social media marketing services in Karachi. Contact us today",
 };
-export default function CaseStudie() {
+export default function Page() {
   return (
     <>
       <div className="page-wrapper uni-body panel bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden bp-xs bp-sm bp-md bp-lg bp-xl bp-xxl dom-ready">

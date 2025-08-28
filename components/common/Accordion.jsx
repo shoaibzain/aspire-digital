@@ -1,42 +1,61 @@
 "use client";
-import { accordionItems } from "@/data/faq";
 import { useEffect, useRef, useState } from "react";
 
-export default function Accordion({
-  faqData = accordionItems,
-  parentClass = "",
-}) {
+export default function Accordion({ faqData = [], parentClass = "" }) {
+  // normalize items so the component can accept different shapes
+  const items = (faqData || []).map((it) => {
+    if (!it) return { question: "", answer: "" };
+    if (it.question !== undefined || it.answer !== undefined) {
+      return { ...it, question: it.question ?? "", answer: it.answer ?? "" };
+    }
+    if (it.title !== undefined || it.content !== undefined) {
+      return { ...it, question: it.title ?? "", answer: it.content ?? "" };
+    }
+    // fallback: stringify
+    return { question: String(it), answer: "" };
+  });
   const parentRefs = useRef([]);
   const questionRefs = useRef([]);
   const answerRefs = useRef([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(() => {
+    const idx = (faqData || []).findIndex((x) => x && (x.expanded || x.isOpen));
+    if (idx !== -1) return idx;
+    return items.length ? 0 : -1;
+  });
   useEffect(() => {
     questionRefs.current.forEach((el) => {
+      if (!el) return;
       el.classList.remove("active");
     });
     parentRefs.current.forEach((el) => {
+      if (!el) return;
       el.classList.remove("active");
     });
     answerRefs.current.forEach((el) => {
+      if (!el) return;
       el.style.height = "0px";
       el.style.overflow = "hidden";
       el.style.transition = "all 0.5s ease-in-out";
       el.style.marginTop = "0px";
     });
     if (currentIndex !== -1) {
-      questionRefs.current[currentIndex].classList.add("active");
-      parentRefs.current[currentIndex].classList.add("active");
+      const qEl = questionRefs.current[currentIndex];
+      const pEl = parentRefs.current[currentIndex];
       const element = answerRefs.current[currentIndex];
-      element.style.height = element.scrollHeight + "px";
-      element.style.overflow = "hidden";
-      element.style.transition = "all 0.5s ease-in-out";
-      element.style.marginTop = "20px";
+      if (qEl) qEl.classList.add("active");
+      if (pEl) pEl.classList.add("active");
+      if (element) {
+        element.style.height = element.scrollHeight + "px";
+        element.style.overflow = "hidden";
+        element.style.transition = "all 0.5s ease-in-out";
+        element.style.marginTop = "20px";
+      }
     }
   }, [currentIndex]);
 
   return (
     <>
-      {faqData.map((item, index) => (
+  {items.map((item, index) => (
         <li
           ref={(el) => (parentRefs.current[index] = el)}
           className={`${

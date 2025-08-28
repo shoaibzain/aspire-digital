@@ -1,14 +1,14 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer from "@/components/footers/Footer";
 import Newsletter from "@/components/blog/Newsletter";
 import BreadCumb from "@/components/blog/BreadCumb";
 import Blogs6 from "@/components/blog/Blogs6";
 export const metadata = {
   title:
-    "Blog",
+    "Digital Marketing Insights | Blog",
   description:
-    "Blog",
+    "Stay updated with the latest trends, tips, and digital marketing insights. Explore our blog for expert advice and practical strategies.",
 };
 export default function Blog3ColsPage() {
   return (
@@ -20,7 +20,7 @@ export default function Blog3ColsPage() {
           <Blogs6 />
           <Newsletter />
         </div>
-        <Footer2 />
+        <Footer />
       </div>
     </>
   );

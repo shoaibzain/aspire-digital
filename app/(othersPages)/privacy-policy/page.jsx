@@ -1,13 +1,13 @@
 import Header2 from "@/components/headers/Header2";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer from "@/components/footers/Footer";
 import Breadcumb from "@/components/otherPages/Breadcumb";
 import Privacy from "@/components/otherPages/Privacy";
 export const metadata = {
   title:
-    "privacy policy",
+    "Privacy Policy | Aspire Digital",
   description:
-    "privacy policy",
+    "Read our privacy policy to make informed decision to be saved from any hustle in future. Connect with us for more info.",
 };
 export default function PrivacyPage() {
   return (
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
           <Breadcumb />
           <Privacy />
         </div>
-        <Footer2 />
+        <Footer />
       </div>
     </>
   );
