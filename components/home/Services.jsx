@@ -1,53 +1,10 @@
 "use client";
-
-import { BarChart3, PenTool, Search, Share2, MousePointer } from "lucide-react";
+import { services } from "@/data/services";
 import { useState } from "react";
 import Link from "next/link";
 
 export default function Services() {
   const [hoveredService, setHoveredService] = useState(null);
-
-  const services = [
-    {
-      name: "Analytics and Data Insights",
-      icon: BarChart3,
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Kn0AgCm9iVmXc27Qb4p17K1u0GsyEY.png",
-      description:
-        "Transform raw data into actionable insights that drive strategic business decisions and growth.",
-    },
-    {
-      name: "Content Marketing",
-      icon: PenTool,
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-FUCcQrQ4B5g44QFMBnUaAsOa4pwG9w.png",
-      description:
-        "Create compelling content that resonates with your audience and builds lasting brand connections.",
-    },
-    {
-      name: "Search Engine Marketing",
-      icon: Search,
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-yfxk6KN9Ecc4xx4delOGwO8coHKyBD.png",
-      description:
-        "Boost your online visibility and drive qualified traffic through strategic search optimization.",
-    },
-    {
-      name: "Social Media Marketing",
-      icon: Share2,
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-frrL5Lv23Vtwhxrw5gvF6kNFTeFiZG.png",
-      description:
-        "Elevate your brand with impactful social media strategies that engage and convert.",
-    },
-    {
-      name: "Pay-Per-Click Advertising",
-      icon: MousePointer,
-      image: "/placeholder.svg?height=300&width=400",
-      description:
-        "Maximize ROI with targeted advertising campaigns that deliver measurable results.",
-    },
-  ];
 
   return (
     <section
@@ -66,7 +23,7 @@ export default function Services() {
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
               >
                 <div className="vstack items-center lg:items-start gap-2 text-center lg:text-start ">
-                  <h2 className="title h3 lg:h2 xl:h1 m-0 px-2">
+                  <h2 className="title h3 lg:h2 xl:h1 m-0">
                     10+ Years Experience
                   </h2>
                 </div>
@@ -99,14 +56,16 @@ export default function Services() {
                               : "text-white/60"
                           }`}
                         >
-                          {service.name}
+                          <Link href={service.href} className="no-underline">
+                            {service.name}
+                          </Link>
                         </h3>
                       </div>
 
                       {/* Hover Card */}
                       <div
-                        className={`absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-4 rounded-xl shadow-lg
-                      transform transition-all duration-500 ease-in-out z-10
+                        className={`absolute right-0 top-1/2 -translate-y-1/2 hidden sm:!flex items-center gap-4 rounded-xl shadow-lg
+                      transform transition-all duration-500 ease-in-out z-10 
                       ${
                         hoveredService === index
                           ? "opacity-100 translate-x-0"
@@ -127,8 +86,16 @@ export default function Services() {
 
                       {/* Circle Button */}
 
-                      <div className={`w-16 h-16 rounded-full border-2 border-white/60 flex items-center justify-center transition-all duration-500 ease-out ${ hoveredService === index ? "opacity-0 invisible translate-x-5" : "opacity-100 visible translate-x-0" } `} >
-                        <i className="icon unicon-arrow-right text-3xl rtl:rotate-180 text-white transition-colors duration-300" />
+                      <div
+                        className={`w-10 sm:w-16 h-10 sm:h-16 rounded-full border-2 border-white/60 flex items-center justify-center transition-all duration-500 ease-out ${
+                          hoveredService === index
+                            ? "opacity-0 invisible translate-x-5"
+                            : "opacity-100 visible translate-x-0"
+                        } `}
+                      >
+                        <Link href={service.href} className="no-underline">
+                          <i className="icon unicon-arrow-right text-xl sm:text-3xl rtl:rotate-180 text-white transition-colors duration-300" />
+                        </Link>
                       </div>
                     </div>
                   </div>

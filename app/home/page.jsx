@@ -7,11 +7,15 @@ import React from "react";
 import Portfolio from "@/components/home/Portfolio";
 import Testimonials from "@/components/home/Testimonials";
 import Elements from "@/components/home/Elements";
+import Brands from "@/components/home/Brands";
 import Services from "@/components/home/Services";
 import Faq from "@/components/innerpages/Faq";
+import ClientsFeedbacks from "@/components/innerpages/ClientsFeedbacks";
+import CaseSudies from "@/components/home/CaseSudies";
 export const metadata = {
   title: "Top Reasons to Choose the Best Digital Marketing Agency in Karachi",
-  description: "Discover Top powerful ways Aspire Digital Marketing Agency in Karachi can boost your business with expert SEO, web design & social media marketing. Try us today!",
+  description:
+    "Discover Top powerful ways Aspire Digital Marketing Agency in Karachi can boost your business with expert SEO, web design & social media marketing. Try us today!",
 };
 export default function HomePage() {
   return (
@@ -24,11 +28,15 @@ export default function HomePage() {
         <div id="wrapper" className="wrap">
           <Hero />
           <About />
-          <Portfolio />
-          <Testimonials />
+          {/* <Portfolio /> */}
+          <CaseSudies/>
+          {/* <Testimonials /> */}
+          <ClientsFeedbacks/>
           <Services />
+          <Brands />
           <Blogs />
-          <Elements />
+          {/* <Elements /> */}
+
           <Faq faqType="accordionItems" />
         </div>
         <Footer />

@@ -28,7 +28,7 @@ export const footerLinks = [
     links: [
       { text: "About Us", href: "about-us", isLink: true },
       { text: "Our Services", href: "our-services" },
-      { text: "Our Portfolio", href: "case-studies" },
+      { text: "Case Studies", href: "case-studies" },
       { text: "Blogs", href: "blogs" },
       { text: "Contact Us", href: "contact-us" },
     ],

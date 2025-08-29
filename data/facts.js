@@ -29,7 +29,6 @@ export const facts = [
     suffix: "%",
   },
 ];
-
 export const factItems = [
   {
     id: 1,

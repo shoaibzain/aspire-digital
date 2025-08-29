@@ -5619,7 +5619,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 .text-none {
   text-decoration: none !important;
@@ -6343,7 +6343,7 @@ textarea.form-control-lg {
     text-align: left !important;
   }
   .sm\:text-center {
-    text-align: center !important;
+    text-align: center;
   }
   .sm\:rounded-1-5 {
     border-radius: 12px !important;

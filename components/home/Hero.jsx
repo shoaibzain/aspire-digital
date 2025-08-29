@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import VideoComponent from "./VideoComponent";
 
 export default function Hero() {
@@ -13,15 +12,15 @@ export default function Hero() {
 
       <div className="position-cover bg-gradient-to-t from-gray-800 via-transparent to-gray-900" />
       <div
-        className="position-absolute d-inline-block w-500px h-500px rounded-circle bg-gradient-45 from-primary to-white start-50 blur-10 translate-middle blend-color-dodge"
+        className="position-absolute d-inline-block w-250px  sm:w-500px h-500px rounded-circle bg-gradient-45 from-primary to-white start-50 blur-10 translate-middle blend-color-dodge"
         style={{ top: "0%" }}
       />
       <div
-        className="position-absolute d-inline-block w-250px h-250px rounded-circle bg-gradient-45 from-primary to-white start-0 blur-10 translate-middle blend-color-dodge"
+        className="position-absolute hidden sm:d-block w-250px h-250px rounded-circle bg-gradient-45 from-primary to-white start-0 blur-10 translate-middle blend-color-dodge"
         style={{ top: "0%" }}
       />
       <div
-        className="position-absolute d-inline-block w-250px h-250px rounded-circle bg-gradient-45 from-primary to-white start-100 blur-10 translate-middle blend-color-dodge"
+        className="position-absolute w-250px h-250px rounded-circle bg-gradient-45 from-primary to-white start-100 blur-10 translate-middle blend-color-dodge hidden sm:d-block"
         style={{ top: "0%" }}
       />
       <div className="section-outer panel pt-9 xl:pt-10">

@@ -29,7 +29,7 @@ export const menuItems = [
         label: "Digital Marketing",
       },
       {
-        href: "/creative-content-writing-services-in-karach",
+        href: "/creative-content-writing-services-in-karachi",
         label: "Creative Content Writing",
       },
       {

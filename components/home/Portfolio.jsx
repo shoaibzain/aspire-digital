@@ -18,6 +18,18 @@ export default function Portfolio() {
 
   const projects = [
     {
+      category: "Website",
+      title: "Real Estate App for Success of GJ Properties",
+      description:
+        "We built a mobile app for GJ Properties, blending tradition with Cognitive Web Design. With AI-Enhanced Multilingual Support, Smart UI/UX Design, and Predictive UX, we achieved a 95% rise in organic traffic, 92% more conversions, and better CTR—powered by No-Code AI Builders, AI-Driven A/B Testing, and Automated Layout Generation.",
+      stat: "95%",
+      statLabel:
+        "increase in customer engagement with the new mobile app experience.",
+      imageMain: "/images/portfolio/buildings.jpg", // replace with your image path
+      imageApp: "/images/portfolio/app-ui.png", // replace with your image path
+      link: "/case-study/gj-properties",
+    },
+    {
       category: "Mobile App",
       title: "Real Estate App for Success of GJ Properties",
       description:
@@ -29,6 +41,42 @@ export default function Portfolio() {
       imageApp: "/images/portfolio/app-ui.png", // replace with your image path
       link: "/case-study/gj-properties",
     },
+        {
+      category: "PPC",
+      title: "Real Estate App for Success of GJ Properties",
+      description:
+        "We built a mobile app for GJ Properties, blending tradition with Cognitive Web Design. With AI-Enhanced Multilingual Support, Smart UI/UX Design, and Predictive UX, we achieved a 95% rise in organic traffic, 92% more conversions, and better CTR—powered by No-Code AI Builders, AI-Driven A/B Testing, and Automated Layout Generation.",
+      stat: "95%",
+      statLabel:
+        "increase in customer engagement with the new mobile app experience.",
+      imageMain: "/images/portfolio/buildings.jpg", // replace with your image path
+      imageApp: "/images/portfolio/app-ui.png", // replace with your image path
+      link: "/case-study/gj-properties",
+    },
+    {
+      category: "SMM",
+      title: "Real Estate App for Success of GJ Properties",
+      description:
+        "We built a mobile app for GJ Properties, blending tradition with Cognitive Web Design. With AI-Enhanced Multilingual Support, Smart UI/UX Design, and Predictive UX, we achieved a 95% rise in organic traffic, 92% more conversions, and better CTR—powered by No-Code AI Builders, AI-Driven A/B Testing, and Automated Layout Generation.",
+      stat: "95%",
+      statLabel:
+        "increase in customer engagement with the new mobile app experience.",
+      imageMain: "/images/portfolio/buildings.jpg", // replace with your image path
+      imageApp: "/images/portfolio/app-ui.png", // replace with your image path
+      link: "/case-study/gj-properties",
+    }, 
+    {
+      category: "SMM",
+      title: "Real Estate App for Success of GJ Properties",
+      description:
+        "We built a mobile app for GJ Properties, blending tradition with Cognitive Web Design. With AI-Enhanced Multilingual Support, Smart UI/UX Design, and Predictive UX, we achieved a 95% rise in organic traffic, 92% more conversions, and better CTR—powered by No-Code AI Builders, AI-Driven A/B Testing, and Automated Layout Generation.",
+      stat: "95%",
+      statLabel:
+        "increase in customer engagement with the new mobile app experience.",
+      imageMain: "/images/portfolio/buildings.jpg", // replace with your image path
+      imageApp: "/images/portfolio/app-ui.png", // replace with your image path
+      link: "/case-study/gj-properties",
+    },    
   ];
 
   const filtered = projects.filter((p) => p.category === active);

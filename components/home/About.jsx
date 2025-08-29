@@ -75,8 +75,8 @@ export default function About() {
     <section id="about" className="about section panel overflow-hidden scrollSpysection">
       <div className="section-outer panel pt-9 lg:pt-10 pb-6 sm:pb-8 lg:pb-9">
         <div className="container max-w-xl">
-          <div className="flex justify-end" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
-            <div className="w-[80%]">
+          <div className="flex justify-end text-center sm:!text-left" data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});">
+            <div className="md:w-[70%] lg:w-[80%]">
               <div>
                 <h1 className="text-3xl md:text-4xl lg:text-4xl font-semibold leading-snug text-black dark:text-white">
                   Our digital strategies and design expertise focus on promoting
@@ -87,7 +87,7 @@ export default function About() {
               </div>
 
               <div className="flex justify-end">
-                <div className="w-[50%]">
+                <div className="md:w-[70%] lg:w-[50%]">
                   <p className="text-lg leading-relaxed">
                     Whether it&apos;s crafting a visually stunning brand
                     identity, designing immersive digital experiences, or
@@ -98,7 +98,7 @@ export default function About() {
 
                   <Link
                     href="/about-us"
-                    className="btn btn-sm lg:btn-md btn-primary px-3 md:mt-2 lg:mt-4"
+                    className="btn btn-sm lg:btn-md btn-primary px-3 mt-2 lg:mt-4"
                   >
                     <span>More about us</span>
                     <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />

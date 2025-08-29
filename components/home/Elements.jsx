@@ -24,8 +24,7 @@ export default function Elements() {
                 spaceBetween={16}
                 centeredSlides={false}
                 loop={true}
-                freeMode={false}
-                freeModeMomentum={false}
+                freeMode={{ enabled: true, momentum: true }} // ✅ correct way
                 speed={1000} // slower, smoother ticker
                 autoplay={{
                   delay: 0, // continuous

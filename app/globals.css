@@ -60,3 +60,8 @@
     justify-content: flex-end;
   }
 }
+
+.contrast-shadow-md,
+.hover\:contrast-shadow-md:hover {
+  box-shadow: 4px 4px 0 0 var(--shadowColor, #000) !important;
+}

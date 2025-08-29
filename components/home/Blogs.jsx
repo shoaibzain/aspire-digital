@@ -1,79 +1,85 @@
-import { blogPosts3, blogPosts5 } from "@/data/blogs";
+import { blogPosts2 } from "@/data/blogs";
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Blogs() {
   return (
-    <section
-      id="insights"
-      className="insights section panel overflow-hidden  scrollSpysection"
+    <div
+      id="blog_posts"
+      className="section panel overflow-hidden uc-dark scrollSpysection"
     >
-      <div className="section-outer panel py-6 xl:py-10">
-        <div className="container xl:max-w-xl">
+      <div className="section-outer panel py-4 overflow-hidden md:py-6 xl:py-10 mx-2 rounded-2 lg:rounded-3 dark:bg-gray-900 dark:text-white">
+        <div className="container max-w-xl">
           <div className="section-inner panel">
             <div
               className="panel vstack items-center gap-4 sm:gap-6 xl:gap-8"
               data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
             >
               <div
-                className="heading vstack sm:hstack gap-4 justify-between items-center md:items-end panel flex-sm-column"
+                className="heading vstack sm:hstack gap-4 justify-between md:items-end panel flex-sm-column"
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: easeOutCubic; duration: 500; delay: anime.stagger(100, {start: 200});"
               >
-                <div className="vstack items-center lg:items-start gap-2 text-center lg:text-start ">
-                  <h2 className="title h3 lg:h2 xl:h1 m-0 px-2">
-                    Latest posts, tutorials{" "}
-                    <span className="d-inline-flex px-1 bg-secondary text-primary -rotate-1 lg:-rotate-2 rounded-1 lg:rounded-1-5">
-                      and updates
-                    </span>
+                <div className="vstack gap-2">
+                  <span className="fw-bold text-primary dark:text-secondary">
+                    Our insights
+                  </span>
+                  <h2 className="title h3 lg:h2 xl:h1 m-0 text-white">
+                    Latest posts and updates
                   </h2>
                 </div>
                 <div>
                   <Link
                     href={`/blogs`}
-                    className="btn btn-sm lg:btn-md btn-primary px-3"
+                    className="btn btn-sm lg:btn-md btn-primary rounded-default"
                   >
-                    <span>View all posts</span>
-                    <i className="icon icon-narrow unicon-arrow-right fw-bold rtl:rotate-180" />
+                    View all posts
                   </Link>
                 </div>
               </div>
               <div className="content panel">
-                <div className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 justify-center g-2">
-                  {blogPosts5.map((post) => (
-                    <div key={post.id}>
-                      <article className="post type-post panel overflow-hidden vstack gap-2 p-2 border rounded-1-5">
-                        <figure className="featured-image m-0 rounded ratio ratio-16x9 rounded-1 uc-transition-toggle overflow-hidden">
+                <div className="row child-cols-12 sm:child-cols-6 lg:child-cols-4 justify-center g-2 xl:g-4">
+                  {blogPosts2.map((post, index) => (
+                    <div key={index}>
+                      <article className="post type-post panel overflow-hidden vstack rounded-1-5 bg-white dark:bg-gray-800">
+                        <figure className="featured-image m-0 rounded ratio ratio-16x9 rounded-0 uc-transition-toggle overflow-hidden">
                           <Image
                             className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                            alt={post.imageAlt}
-                            src={post.imageUrl}
-                            width="1280"
-                            height="853"
+                            src={post.imageSrc}
+                            width={1280}
+                            height={853}
+                            alt={post.altText}
                           />
                           <Link
-                            href={`/${post.slug ?? post.id}`}
+                            href={`/blog-details/${post.id}`}
                             className="position-cover"
-                            data-caption={post.imageAlt}
+                            data-caption={post.altText}
                           ></Link>
                         </figure>
-                        <div className="panel vstack gap-1">
-                          <h3 className="post-title panel h4 m-0">
-                            <Link
-                              className="text-none"
-                              href={`/${post.slug ?? post.id}`}
-                            >
-                              {post.title}
-                            </Link>
-                          </h3>
+                        <div className="panel vstack gap-1 p-2 lg:p-3 lg:pt-2">
+                          <Link
+                            className="post-category text-primary fw-normal text-none fw-bold fs-7 text-primary dark:text-secondary"
+                            href={`/blog-category/${post.category}`}
+                          >
+                            {post.category}
+                          </Link>
+                          <Link
+                            className="text-none"
+                            href={`/blog-details/${post.id}`}
+                          >
+                            <h3 className="post-title panel h5 lg:h4 m-0 ltr:pe-4 rtl:ps-4">
+                              <span>{post.title}</span>
+                              <i className="position-absolute top-0 ltr:end-0 rtl:start-0 mt-narrow icon-1 unicon-arrow-up-right fw-bold rtl:-rotate-90" />
+                            </h3>
+                          </Link>
                           <p className="post-excrept fs-6 opacity-70">
                             {post.excerpt}
                           </p>
                           <div className="post-meta hstack gap-1 panel overflow-hidden mt-2">
                             <div className="vstack gap-0">
                               <Link
-                                href={`/${post.slug ?? post.id}`}
-                                className="text-none fw-bold text-black dark:text-white"
+                                href={`/blog-author/Amir Khan`}
+                                className="text-none fw-bold text-dark dark:text-white"
                               >
                                 {post.authorName}
                               </Link>
@@ -81,104 +87,17 @@ export default function Blogs() {
                                 <span>{post.date}</span>
                               </div>
                             </div>
-                            <Link className="post-link hstack gap-narrow fs-7"
-                              href={`/${post.slug ?? post.id}`}
-                            >
-                              Read more
-                            </Link>
                           </div>
                         </div>
                       </article>
                     </div>
                   ))}
-                  <div>
-                    <div className="row child-cols-12 g-2">
-                      {blogPosts3.slice(0, 3).map((post, index) => (
-                        <div key={index}>
-                          <article className="post type-post panel overflow-hidden p-2 border rounded-1-5">
-                            <div className="panel hstack gap-2">
-                              <div className="w-80px lg:w-100px">
-                                <figure className="featured-image m-0 rounded ratio ratio-1x1 rounded-1 uc-transition-toggle overflow-hidden">
-                                  <Image
-                                    className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                                    src={post.imgSrc}
-                                    width={1280}
-                                    height={853}
-                                    alt={post.alt}
-                                  />
-                                  <Link
-                                    href={`/${post.slug ?? post.id}`}
-                                    className="position-cover"
-                                    data-caption={post.caption}
-                                  ></Link>
-                                </figure>
-                              </div>
-                              <div className="panel vstack gap-narrow">
-                                <div className="post-date hstack gap-narrow fs-7 opacity-70">
-                                  <span>{post.date}</span>
-                                </div>
-                                <h3 className="post-title panel h5 m-0">
-                                    <Link
-                                      className="text-none"
-                                      href={`/${post.slug ?? post.id}`}
-                                    >
-                                      {post.title}
-                                    </Link>
-                                </h3>
-                              </div>
-                            </div>
-                          </article>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div>
-                    <div className="row child-cols-12 g-2">
-                      {blogPosts3.slice(3, 6).map((post, index) => (
-                        <div key={index}>
-                          <article className="post type-post panel overflow-hidden p-2 border rounded-1-5">
-                            <div className="panel hstack gap-2">
-                              <div className="w-80px lg:w-100px">
-                                <figure className="featured-image m-0 rounded ratio ratio-1x1 rounded-1 uc-transition-toggle overflow-hidden">
-                                  <Image
-                                    className="media-cover image uc-transition-scale-up uc-transition-opaque"
-                                    src={post.imgSrc}
-                                    width={1280}
-                                    height={853}
-                                    alt={post.alt}
-                                  />
-                                  <Link
-                                    href={`/${post.id}`}
-                                    className="position-cover"
-                                    data-caption={post.caption}
-                                  ></Link>
-                                </figure>
-                              </div>
-                              <div className="panel vstack gap-narrow">
-                                <div className="post-date hstack gap-narrow fs-7 opacity-70">
-                                  <span>{post.date}</span>
-                                </div>
-                                <h3 className="post-title panel h5 m-0">
-                                    <Link
-                                      className="text-none"
-                                      href={`/${post.id}`}
-                                    >
-                                      {post.title}
-                                    </Link>
-                                </h3>
-                              </div>
-                            </div>
-                          </article>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
